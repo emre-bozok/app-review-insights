@@ -1,6 +1,6 @@
 # App Review Insights
 
-Collect Google Play and App Store reviews, classify Turkish feedback with a Google generative model, and produce category and component summaries for product analysis.
+Collect Google Play and App Store reviews, classify feedback with a Google generative model, and produce category and component summaries for product analysis.
 
 This project grew from a notebook workflow used to analyze mobile-app feedback. The portfolio edition separates collection, model calls, validation, and reporting into reusable Python modules, while retaining a clean notebook walkthrough.
 
@@ -8,7 +8,7 @@ This project grew from a notebook workflow used to analyze mobile-app feedback. 
 
 - Fetches a bounded set of recent Android reviews and paginated iOS RSS reviews.
 - Assigns one of four categories: **Talep** (request), **Hata** (reported bug), **Şikayet** (complaint), or **Hata ya da Şikayet değil** (other feedback).
-- Adds a specific Turkish component/topic such as giriş, bildirimler, or TradingView.
+- Adds a specific component/topic such as giriş, bildirimler, or TradingView.
 - Uses structured JSON responses and validates every classification with Pydantic.
 - Joins results by stable review ID, preserving input text and order. Missing, duplicate, or unknown IDs fail validation.
 - Produces detailed JSON/CSV exports and category counts, percentages, and topic counts.
@@ -56,7 +56,7 @@ python cli.py collect --platform android --app-id YOUR_ANDROID_PACKAGE --limit 1
 python cli.py collect --platform ios --app-id YOUR_NUMERIC_APP_STORE_ID --pages 1 --output data/ios_reviews.json
 ```
 
-Defaults are Turkish language and Türkiye storefront. Android collection is capped at 1,000 requested reviews per run; iOS permits 1–10 feed pages and defaults to one. These sources are not guaranteed to expose all historical reviews. Provider changes, throttling, and storefront differences may affect availability. Collection errors are surfaced rather than treated as successful empty exports.
+Collection language and storefront are configurable with `--language` and `--country`; the defaults are `tr` and `tr`. Android collection is capped at 1,000 requested reviews per run; iOS permits 1–10 feed pages and defaults to one. These sources are not guaranteed to expose all historical reviews. Provider changes, throttling, and storefront differences may affect availability. Collection errors are surfaced rather than treated as successful empty exports.
 
 The normalized JSON format is:
 
@@ -85,6 +85,10 @@ Outputs:
 - `summary.json`: category counts/percentages and topic counts within each category.
 
 Original review text is preserved in JSON. Topic strings are model-generated and are counted literally; there is no cross-batch topic taxonomy or automatic semantic merging.
+
+## Language configuration
+
+Collection language and storefront are configurable. The included model prompt, output category labels, and synthetic examples use Turkish. Adapt the prompt and output-label schema for other reporting languages, then evaluate classification quality on representative reviews. This repository does not include a multilingual accuracy benchmark.
 
 ## Tests
 
