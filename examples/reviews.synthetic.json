@@ -1,0 +1,58 @@
+[
+  {
+    "review_id": "demo-001",
+    "platform": "Android",
+    "date": "2026-01-01",
+    "rating": 1,
+    "text": "Uygulama giriş ekranında kapanıyor."
+  },
+  {
+    "review_id": "demo-002",
+    "platform": "iOS",
+    "date": "2026-01-02",
+    "rating": 3,
+    "text": "Bildirimleri saat aralığına göre kapatmak istiyorum."
+  },
+  {
+    "review_id": "demo-003",
+    "platform": "Android",
+    "date": "2026-01-03",
+    "rating": 2,
+    "text": "Yeni menüde aradığım sayfayı bulmak zorlaştı."
+  },
+  {
+    "review_id": "demo-004",
+    "platform": "iOS",
+    "date": "2026-01-04",
+    "rating": 5,
+    "text": "Arayüzü çok beğendim, teşekkürler."
+  },
+  {
+    "review_id": "demo-005",
+    "platform": "Android",
+    "date": "2026-01-05",
+    "rating": 1,
+    "text": "Emir gönderdiğimde hata mesajı çıkıyor."
+  },
+  {
+    "review_id": "demo-006",
+    "platform": "iOS",
+    "date": "2026-01-06",
+    "rating": 4,
+    "text": "Koyu tema seçeneği ekler misiniz?"
+  },
+  {
+    "review_id": "demo-007",
+    "platform": "Android",
+    "date": "2026-01-07",
+    "rating": 1,
+    "text": "Grafik açılmıyor, sayfa boş kalıyor."
+  },
+  {
+    "review_id": "demo-008",
+    "platform": "iOS",
+    "date": "2026-01-08",
+    "rating": 2,
+    "text": "Destek ekibinden dönüş bekleme süresi uzun."
+  }
+]

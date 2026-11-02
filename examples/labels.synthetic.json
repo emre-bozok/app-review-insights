@@ -1,0 +1,42 @@
+[
+  {
+    "review_id": "demo-001",
+    "category": "Hata",
+    "topic": "giriş"
+  },
+  {
+    "review_id": "demo-002",
+    "category": "Talep",
+    "topic": "bildirimler"
+  },
+  {
+    "review_id": "demo-003",
+    "category": "Şikayet",
+    "topic": "navigasyon"
+  },
+  {
+    "review_id": "demo-004",
+    "category": "Hata ya da Şikayet değil",
+    "topic": "genel deneyim"
+  },
+  {
+    "review_id": "demo-005",
+    "category": "Hata",
+    "topic": "hisse alış-satış"
+  },
+  {
+    "review_id": "demo-006",
+    "category": "Talep",
+    "topic": "görünüm"
+  },
+  {
+    "review_id": "demo-007",
+    "category": "Hata",
+    "topic": "TradingView"
+  },
+  {
+    "review_id": "demo-008",
+    "category": "Şikayet",
+    "topic": "müşteri desteği"
+  }
+]

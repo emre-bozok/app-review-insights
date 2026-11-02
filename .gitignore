@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*credentials*.json
+*service_account*.json
+*service-account*.json
+# Local reviews, raw responses, exports, sessions
+data/
+reports/
+*.xlsx
+*.xls
+*.csv
+*.log
+*.db
+*.sqlite*
+*.local.*
+# Environments, notebooks, editor state
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+.vscode/
+.idea/
+build/
+dist/
+*.egg-info/

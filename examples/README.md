@@ -1,0 +1,1 @@
+Both JSON files contain invented data created for this repository. Labels are manually assigned demo fixtures, not live model outputs or measured ground truth. No private review or original notebook output was copied.
